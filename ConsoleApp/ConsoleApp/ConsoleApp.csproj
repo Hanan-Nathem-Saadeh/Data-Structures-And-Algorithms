@@ -9,8 +9,6 @@
     <Folder Include="Challenges\array-binary-search\" />
     <Folder Include="Challenges\array-insert-shift\" />
     <Folder Include="Challenges\array-reverse\" />
-    <Folder Include="Challenges\stack-queue-pseudo\" />
-    <Folder Include="img\" />
   </ItemGroup>
 
 </Project>
