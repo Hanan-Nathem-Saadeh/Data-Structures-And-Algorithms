@@ -17,5 +17,4 @@
 | 8      | Singly-Linked-List-ZIPMethod  | [zipMethod](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/ZipMethod.png)|
 | 8      | Singly-Linked-List-palindrome  | [palindrome](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/palindrome.png)|
 | 9      | Stack and Queue  | [Stack And Queue](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/stack-and-queue/README.md)|
-
-
+| 10      | stack-queue-pseudo  | [stack-queue-pseudo](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/stack-queue-pseudo/README.md)|
