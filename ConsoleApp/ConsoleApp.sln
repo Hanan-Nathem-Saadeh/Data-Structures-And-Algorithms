@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPsuedoQueue", "TestProj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQueueAndStackImplementation", "TestQueueAndStackImplementation\TestQueueAndStackImplementation.csproj", "{9603FCD0-DA3C-4211-8E1E-834B0EF353B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestQueueAndStackImplementation", "TestQueueAndStackImplementation\TestQueueAndStackImplementation.csproj", "{9603FCD0-DA3C-4211-8E1E-834B0EF353B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSinglyLinkedList", "TestSinglyLinkedList\TestSinglyLinkedList.csproj", "{622A72CC-FA80-47E6-A228-2E192FFCAEA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSinglyLinkedList", "TestSinglyLinkedList\TestSinglyLinkedList.csproj", "{622A72CC-FA80-47E6-A228-2E192FFCAEA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStack-queue-animal-shelter", "TestStack-queue-animal-shelter\TestStack-queue-animal-shelter.csproj", "{43E11E19-55A5-4AA0-B74B-D6C0775AC282}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{622A72CC-FA80-47E6-A228-2E192FFCAEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{622A72CC-FA80-47E6-A228-2E192FFCAEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{622A72CC-FA80-47E6-A228-2E192FFCAEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E11E19-55A5-4AA0-B74B-D6C0775AC282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E11E19-55A5-4AA0-B74B-D6C0775AC282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E11E19-55A5-4AA0-B74B-D6C0775AC282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E11E19-55A5-4AA0-B74B-D6C0775AC282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{3998D084-E2CA-437D-B53F-D744BC1373AE} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{9603FCD0-DA3C-4211-8E1E-834B0EF353B8} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{622A72CC-FA80-47E6-A228-2E192FFCAEA8} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
+		{43E11E19-55A5-4AA0-B74B-D6C0775AC282} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87865C56-DE57-44DA-AA8E-A566E0CE4120}
