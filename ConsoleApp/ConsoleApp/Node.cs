@@ -10,9 +10,7 @@ namespace SinglyLinkedList
     {
         public int Value { get; set; }
         public Node Next { get; set; }
-        public Node()
-        {
-        }
+       
         public Node(int value)
         {
             this.Value = value;

@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApp.Challenges.SinglyLinkedList;
-namespace ConsoleApp
+using ConsoleApp.Challenges.stack_queue_animal_shelter;
+ namespace ConsoleApp
 {
     internal class Program
     {
@@ -13,6 +14,16 @@ namespace ConsoleApp
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
+
+                AnimalShelter MyNewAnimalShleter = new AnimalShelter();
+                AnimalNode node1 = new AnimalNode("Lolo Caty","Cat",4);
+                AnimalNode node2 = new AnimalNode("Popy", "dog", 9);
+                AnimalNode node3 = new AnimalNode("Loletta", "cat", 1);
+                AnimalNode node4 = new AnimalNode("HaxyBob", "Dog", 4);
+                MyNewAnimalShleter.Enqueue(node1);
+                MyNewAnimalShleter.Enqueue(node2);
+                MyNewAnimalShleter.Enqueue(node3);
+                MyNewAnimalShleter.Enqueue(node4);
 
                 // Can successfully instantiate an empty linked list :)
                 //LinkedList list = new LinkedList();
@@ -55,24 +66,24 @@ namespace ConsoleApp
                 //link2.Insert(5);
                 //Console.WriteLine(linke1.toString());
                 //Console.WriteLine(link2.toString());
-                LinkedList newList1 = new LinkedList();
+               // LinkedList newList1 = new LinkedList();
                 //LinkedList newList2 = new LinkedList();
-                newList1.Insert(2);
-                newList1.Insert(5);
+                //newList1.Insert(2);
+                //newList1.Insert(5);
 
-                newList1.Insert(3);
-                newList1.Insert(5);
-                newList1.Insert(0);
+                //newList1.Insert(3);
+                //newList1.Insert(5);
+                //newList1.Insert(0);
 
-                Console.WriteLine(newList1.toString());
-                if (newList1.palindromeLinkeList(newList1))
-                {
-                    Console.WriteLine(" Linked list is palindrome");
-                }
-                else
-                {
-                    Console.WriteLine(" Linked list is not palindrome");
-                }
+                //Console.WriteLine(newList1.toString());
+                //if (newList1.palindromeLinkeList(newList1))
+                //{
+                //    Console.WriteLine(" Linked list is palindrome");
+                //}
+                //else
+                //{
+                //    Console.WriteLine(" Linked list is not palindrome");
+                //}
 
 
                 //newList2.Insert(4);
