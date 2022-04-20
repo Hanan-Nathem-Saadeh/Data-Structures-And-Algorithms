@@ -60,5 +60,6 @@ namespace stack_and_queue.Classes
         {
             return Front == null;
         }
+
     }
 }
