@@ -96,18 +96,7 @@ namespace ConsoleApp.Challenges.stack_queue_animal_shelter
 
 
         }
-        public void toString()
-        {
-            AnimalNode current = Front;
-            while (current.Next != null)
-            {
-                Console.Write($"{current.Name}->");
-                current = current.Next;
-            }
-            Console.Write($"{current.Name}->");
-            Console.Write("NULL");
-            Console.WriteLine();
-        }
+        
 
     }
 }
