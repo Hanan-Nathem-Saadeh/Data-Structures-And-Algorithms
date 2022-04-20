@@ -6,7 +6,7 @@ namespace TestStack_queue_animal_shelter
     public class TestShleter
     {
         AnimalShelter MyNewAnimalShleter = new AnimalShelter();
-        //Test Enqueue
+        //Test Enqueue multiple values
         [Fact]
         public void TestEnqueue()
         {
@@ -19,6 +19,18 @@ namespace TestStack_queue_animal_shelter
             MyNewAnimalShleter.Enqueue(node3);
             MyNewAnimalShleter.Enqueue(node4);
             Assert.Equal(node1, MyNewAnimalShleter.Peek());
+        }
+
+        //Test Enqueue single value
+        [Fact]
+        public void TestSingleEnqueue()
+        {
+            
+            AnimalNode node2 = new AnimalNode("Popy", "dog", 9);
+           
+            MyNewAnimalShleter.Enqueue(node2);
+            
+            Assert.Equal(node2, MyNewAnimalShleter.Peek());
         }
         // Test Dequeue
         [Fact]
@@ -33,7 +45,25 @@ namespace TestStack_queue_animal_shelter
             MyNewAnimalShleter.Enqueue(node3);
             MyNewAnimalShleter.Enqueue(node4);
 
-            Assert.Equal("Lolo Caty", MyNewAnimalShleter.Dequeue("cat"));
+            Assert.Equal("cat", MyNewAnimalShleter.Dequeue("cat"));
+        }
+        // Test Enqueue Not Dog or Cat
+        [Fact]
+        public void TestEnqueueInvalidAnimal()
+        {
+            AnimalNode node1 = new AnimalNode("Hoursy", "Hourse", 4);
+            MyNewAnimalShleter.Enqueue(node1);
+            Assert.Null(MyNewAnimalShleter.Front);
+        }
+        // Test Dequeue Invalid animal
+        [Fact]
+        public void TestDequeueInvalidAnimal()
+        {
+            AnimalNode node1 = new AnimalNode("Loletta", "cat", 1);
+            AnimalNode node2 = new AnimalNode("HaxyBob", "Dog", 4);
+            MyNewAnimalShleter.Enqueue(node1);
+            MyNewAnimalShleter.Enqueue(node2);
+            Assert.Null(MyNewAnimalShleter.Dequeue("hourse"));
         }
         //test peek 
         [Fact]

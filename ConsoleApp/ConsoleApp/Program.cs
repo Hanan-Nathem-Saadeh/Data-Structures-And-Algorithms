@@ -15,15 +15,6 @@ using ConsoleApp.Challenges.stack_queue_animal_shelter;
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
 
-                AnimalShelter MyNewAnimalShleter = new AnimalShelter();
-                AnimalNode node1 = new AnimalNode("Lolo Caty","Cat",4);
-                AnimalNode node2 = new AnimalNode("Popy", "dog", 9);
-                AnimalNode node3 = new AnimalNode("Loletta", "cat", 1);
-                AnimalNode node4 = new AnimalNode("HaxyBob", "Dog", 4);
-                MyNewAnimalShleter.Enqueue(node1);
-                MyNewAnimalShleter.Enqueue(node2);
-                MyNewAnimalShleter.Enqueue(node3);
-                MyNewAnimalShleter.Enqueue(node4);
 
                 // Can successfully instantiate an empty linked list :)
                 //LinkedList list = new LinkedList();
@@ -66,7 +57,7 @@ using ConsoleApp.Challenges.stack_queue_animal_shelter;
                 //link2.Insert(5);
                 //Console.WriteLine(linke1.toString());
                 //Console.WriteLine(link2.toString());
-               // LinkedList newList1 = new LinkedList();
+                // LinkedList newList1 = new LinkedList();
                 //LinkedList newList2 = new LinkedList();
                 //newList1.Insert(2);
                 //newList1.Insert(5);
