@@ -65,12 +65,7 @@ namespace Test_stack_queue_brackets
             bool Result = multi_bracket_validation.multiBracketValidation("{(})");
             Assert.False(Result);
         }
-        [Fact]
-        public void Test56()
-        {
-            bool Result = multi_bracket_validation.multiBracketValidation("{a(})");
-            Assert.True(Result);
-        }
+        
 
 
 
