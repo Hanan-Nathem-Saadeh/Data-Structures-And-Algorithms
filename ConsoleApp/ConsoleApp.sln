@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestQueueAndStackImplementa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSinglyLinkedList", "TestSinglyLinkedList\TestSinglyLinkedList.csproj", "{622A72CC-FA80-47E6-A228-2E192FFCAEA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestStack-queue-animal-shelter", "TestStack-queue-animal-shelter\TestStack-queue-animal-shelter.csproj", "{43E11E19-55A5-4AA0-B74B-D6C0775AC282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestStack-queue-animal-shelter", "TestStack-queue-animal-shelter\TestStack-queue-animal-shelter.csproj", "{43E11E19-55A5-4AA0-B74B-D6C0775AC282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A070FE15-4150-4AE5-8F12-43F198EF9479}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

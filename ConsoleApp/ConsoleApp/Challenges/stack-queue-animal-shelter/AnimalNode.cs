@@ -15,6 +15,8 @@ namespace ConsoleApp.Challenges.stack_queue_animal_shelter
 
         public AnimalNode(string Name,string Type, int Age )
         {
+            if (Type != null)
+            { Type = Type.ToLower(); }
             this.Type = Type;
             this.Name = Name;
             this.Age = Age;
