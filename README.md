@@ -19,3 +19,4 @@
 | 9      | Stack and Queue  | [Stack And Queue](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/stack-and-queue/README.md)|
 | 10      | stack-queue-pseudo  | [stack-queue-pseudo](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/stack-queue-pseudo/README.md)|
 | 11      | stack-queue-animal-shelter  | [stack-queue-animal-shelter](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/stack-queue-animal-shelter/README.md)|
+| 12      | stack-queue-brackets | [stack-queue-brackets](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/multi-bracket-validation/README.md)|
