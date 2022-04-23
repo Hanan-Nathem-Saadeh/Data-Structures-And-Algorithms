@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApp.Challenges.SinglyLinkedList;
 using ConsoleApp.Challenges.stack_queue_animal_shelter;
+using ConsoleApp.Challenges.Get_Max_MochInterview;
  namespace ConsoleApp
 {
     internal class Program
@@ -14,7 +15,14 @@ using ConsoleApp.Challenges.stack_queue_animal_shelter;
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
-
+                OrigionalStack MyStack = new OrigionalStack();
+                MyStack.Push(2);
+                MyStack.Push(4);
+                MyStack.Push(6);
+                MyStack.Push(8);
+                Console.WriteLine(MyStack.GetMax());
+             
+                
 
                 // Can successfully instantiate an empty linked list :)
                 //LinkedList list = new LinkedList();
