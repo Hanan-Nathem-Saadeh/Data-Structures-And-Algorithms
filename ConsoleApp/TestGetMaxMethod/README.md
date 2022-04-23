@@ -7,8 +7,10 @@
          - Use a maxStack instance variable, and each time you push a number, you check if it’s >= the peek on maxStack; if so, push it onto both maxStack and            - the actual stack. Then when popping, check if equal to max on maxStack, and if so, also pop maxStack.
          - This solution takes O(1) time to both maintain and retrieve the maximum value.
  
- ## Whiteboard Process
+ ## Whiteboard Proces
+ 
  ![](../../img/GetMax.png)
+
 
 ## Approach & Efficiency 
 ### Big O Complexity
