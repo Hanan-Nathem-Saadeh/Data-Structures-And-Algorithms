@@ -9,7 +9,7 @@
  
  ## Whiteboard Proces
  
- ![](../../img/GetMax.png)
+ ![](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/GetMax.png)
 
 
 ## Approach & Efficiency 
