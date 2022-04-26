@@ -22,7 +22,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-stack-queue-brackets", "Test-stack-queue-brackets\Test-stack-queue-brackets.csproj", "{8F747E4B-2CF6-424B-A02B-EA2C2867F393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGetMaxMethod", "TestGetMaxMethod\TestGetMaxMethod.csproj", "{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGetMaxMethod", "TestGetMaxMethod\TestGetMaxMethod.csproj", "{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBST", "TestBST\TestBST.csproj", "{65A90B63-F8F4-4BB9-90DA-B284A2970DD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,10 @@ Global
 		{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A90B63-F8F4-4BB9-90DA-B284A2970DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A90B63-F8F4-4BB9-90DA-B284A2970DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A90B63-F8F4-4BB9-90DA-B284A2970DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A90B63-F8F4-4BB9-90DA-B284A2970DD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{43E11E19-55A5-4AA0-B74B-D6C0775AC282} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{8F747E4B-2CF6-424B-A02B-EA2C2867F393} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{3FED2FB3-A134-4CF6-BDE5-333C6E0122A2} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
+		{65A90B63-F8F4-4BB9-90DA-B284A2970DD2} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87865C56-DE57-44DA-AA8E-A566E0CE4120}
