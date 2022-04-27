@@ -15,12 +15,12 @@ using ConsoleApp.Challenges.Get_Max_MochInterview;
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
-                OrigionalStack MyStack = new OrigionalStack();
-                MyStack.Push(2);
-                MyStack.Push(4);
-                MyStack.Push(6);
-                MyStack.Push(8);
-                Console.WriteLine(MyStack.GetMax());
+                //OrigionalStack MyStack = new OrigionalStack();
+                //MyStack.Push(2);
+                //MyStack.Push(4);
+                //MyStack.Push(6);
+                //MyStack.Push(8);
+                //Console.WriteLine(MyStack.GetMax());
              
                 
 

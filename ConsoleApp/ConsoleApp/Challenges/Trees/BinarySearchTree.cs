@@ -10,30 +10,24 @@ namespace ConsoleApp.Challenges.Trees
     {
         public void Add(int Value)
         {
-            Node parent = null;
-            Node current = Root;
-            
+            Node parent;
+            Node current;
+            Node newNode = new Node(Value);
             // if we will add the first node in the tree 
-            if (Root == null)
-            {
-                Root = new Node(Value);
-                return;
-
-            }
-            else
+            if (Root != null)
             {
                 current = Root;
-                while(true)
+
+                while (true)
                 {
                     parent = current;
-                    if (Value <= current.Value)
+                    if (Value < current.Value)
                     {
                         current = current.Left;
                         if (current == null)
                         {
-                            parent.Left = new Node(Value);
-                            return;
-
+                            parent.Left = newNode;
+                            break;
                         }
                     }
                     else
@@ -41,16 +35,16 @@ namespace ConsoleApp.Challenges.Trees
                         current = current.Right;
                         if (current == null)
                         {
-                            parent.Right = new Node(Value);
-                            return;
+                            parent.Right = newNode;
+                            break;
                         }
                     }
                 }
-                
-
-                }
-           
-
+            }
+            else
+            {
+                Root = newNode;
+            }
         }
         public bool Contains(int Value)
         {
@@ -63,7 +57,6 @@ namespace ConsoleApp.Challenges.Trees
                 else if (Value <= Current.Value)
                 {
                     Current = Current.Left;
-
                 }
                 else
                 {

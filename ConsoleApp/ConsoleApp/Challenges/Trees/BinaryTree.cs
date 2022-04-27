@@ -10,22 +10,42 @@ namespace ConsoleApp.Challenges.Trees
     public class BinaryTree
     {
         public Node Root;
-        List<object> MyList = new List<object>();
+        public List<int> MyList = new List<int>();
         //Create an empty tree without root
         public BinaryTree()
         {
             Root = null;
+            
         }
         // creat a new tree with one node which is the root
-        public BinaryTree(int value)
+        public BinaryTree(Node newNode)
         {
-            Root = new Node(value);
+            Root = newNode;
         }
+        //Code Challenge 16 Find Max Value 
+        public int FindMax()
+        {
+            var ValuesArray = PreOrder(Root);
+            int MaxValue = (int)ValuesArray[0];
+            foreach (var Value in ValuesArray)
+            {
+                if ((int)Value > MaxValue)
+                {
+                    MaxValue = (int)Value;
+                }
+            }
+            return MaxValue;
+        }
+
+
         // Pre Order
-        public object[] PreOrder(Node Root)
+        public int[] PreOrder(Node Root)
         {
             try {
-
+                if (Root == null)
+                {
+                    throw new Exception("Empty Tree ....");
+                }
                 MyList.Add(Root.Value);
           
             if (Root.Left != null)
@@ -46,12 +66,14 @@ namespace ConsoleApp.Challenges.Trees
         }
         // In Order
 
-        public object[]  InOrder( Node Root)
+        public int[]  InOrder( Node Root)
         {
             try
             {
-            
-
+                if (Root == null)
+                {
+                    throw new Exception("Empty Tree ....");
+                }
                 if (Root.Left != null)
                 {
                     InOrder(Root.Left);
@@ -71,11 +93,14 @@ namespace ConsoleApp.Challenges.Trees
         }
         // Post Order
 
-        public object[] PostOrder( Node Root)
+        public int[] PostOrder( Node Root)
         {
             try
             {
-               
+                if (Root == null)
+                {
+                    throw new Exception("Empty Tree ....");
+                }
                 if (Root.Left != null)
                 {
                     PostOrder(Root.Left);

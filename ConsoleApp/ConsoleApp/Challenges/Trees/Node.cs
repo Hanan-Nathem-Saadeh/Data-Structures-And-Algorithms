@@ -11,17 +11,10 @@ namespace ConsoleApp.Challenges.Trees
         public int Value { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
-        //public Node ()
-        //{
-        //    this.Value = 0;
-        //    Left = null;
-        //    Right = null;
-        //}
         public Node(int value)
         {
             this.Value = value;
-            Left = null;
-            Right= null;
+           
         }
     }
 }
