@@ -11,7 +11,7 @@ Write a function called breadth first
 
 # Whiteboard Process
 
-![](../../img/bf.png)
+![](../../img/BF.png)
 
 # Approach & Efficiency
 
