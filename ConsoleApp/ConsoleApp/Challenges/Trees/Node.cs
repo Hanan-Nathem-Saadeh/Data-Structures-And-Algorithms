@@ -14,7 +14,18 @@ namespace ConsoleApp.Challenges.Trees
         public Node(int value)
         {
             this.Value = value;
+            this.Right = null;
+            this.Left = null;
            
         }
+        public Node(int value , Node Left , Node node)
+
+        {
+            this.Value = value;
+            this.Right = Right;
+            this.Left = Left;
+
+        }
+
     }
 }

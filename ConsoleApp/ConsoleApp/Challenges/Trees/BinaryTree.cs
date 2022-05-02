@@ -21,7 +21,9 @@ namespace ConsoleApp.Challenges.Trees
         public BinaryTree(Node newNode)
         {
             Root = newNode;
+
         }
+       
         //Code Challenge 16 Find Max Value 
         public int FindMax()
         {
