@@ -2,7 +2,11 @@
 using ConsoleApp.Challenges.SinglyLinkedList;
 using ConsoleApp.Challenges.stack_queue_animal_shelter;
 using ConsoleApp.Challenges.Get_Max_MochInterview;
- namespace ConsoleApp
+using ConsoleApp.Challenges.Trees;
+using ConsoleApp.Challenges;
+using System.Collections.Generic;
+
+namespace ConsoleApp
 {
     internal class Program
     {
@@ -15,14 +19,27 @@ using ConsoleApp.Challenges.Get_Max_MochInterview;
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
-                //OrigionalStack MyStack = new OrigionalStack();
-                //MyStack.Push(2);
-                //MyStack.Push(4);
-                //MyStack.Push(6);
-                //MyStack.Push(8);
-                //Console.WriteLine(MyStack.GetMax());
-             
+
+                BinaryTree NewTree  = new BinaryTree();
+                NewTree.Root = (new Node(5));
+                NewTree.Root.Left = (new Node(10));
+                NewTree.Root.Right = (new Node(15));
+                NewTree.Root.Left.Left = (new Node(20));
+                NewTree.Root.Left.Right = (new Node(25));
+                NewTree.Root.Right.Left = (new Node(30));
+                NewTree.Root.Right.Right = (new Node(35));
+               
+
+               BreadthFirst MyBF = new BreadthFirst();
+                List<int> MyNewList = new List<int>();
+
                 
+            MyNewList=MyBF.BreadthFirstMethod(NewTree);
+
+                foreach (int x in MyNewList)
+                {
+                    Console.Write(x + " - ");
+                }
 
                 // Can successfully instantiate an empty linked list :)
                 //LinkedList list = new LinkedList();
