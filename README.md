@@ -22,3 +22,4 @@
 | 14      | stack-queue-brackets | [stack-queue-brackets](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/multi-bracket-validation/README.md)|
 | 15      | Tree Implementation | [Tree Implementation](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Trees/README.md)|
 | 16      | Tree-Breadth-First | [Tree-Breadth-First](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/tree-breadth-first/ConsoleApp/ConsoleApp/Challenges/Trees/BreathFirsrREADME.md)|
+| 17      | Tree-Fizz-Buzz | [Tree-Fizz-Buzz](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Trees/tree-fizz-buzz/tree-fizz-buzz.md)|
