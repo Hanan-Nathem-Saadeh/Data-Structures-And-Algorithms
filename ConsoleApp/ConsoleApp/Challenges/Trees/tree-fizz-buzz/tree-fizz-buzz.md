@@ -19,7 +19,7 @@ Write a function called fizz buzz tree
 
 # Whiteboard Process
 
-![](../../img/FIZZBUZZ.png)
+![](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/tree-fizz-buzz/ConsoleApp/ConsoleApp/img/FIZZBUZZ.png)
 
 
 # Approach & Efficiency
