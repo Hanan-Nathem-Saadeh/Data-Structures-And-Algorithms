@@ -5,6 +5,7 @@ using ConsoleApp.Challenges.Get_Max_MochInterview;
 using ConsoleApp.Challenges.Trees;
 using ConsoleApp.Challenges;
 using System.Collections.Generic;
+using ConsoleApp.Challenges.Trees.tree_fizz_buzz;
 
 namespace ConsoleApp
 {
@@ -19,27 +20,50 @@ namespace ConsoleApp
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
-
-                BinaryTree NewTree  = new BinaryTree();
-                NewTree.Root = (new Node(5));
-                NewTree.Root.Left = (new Node(10));
-                NewTree.Root.Right = (new Node(15));
-                NewTree.Root.Left.Left = (new Node(20));
-                NewTree.Root.Left.Right = (new Node(25));
-                NewTree.Root.Right.Left = (new Node(30));
-                NewTree.Root.Right.Right = (new Node(35));
-               
-
-               BreadthFirst MyBF = new BreadthFirst();
-                List<int> MyNewList = new List<int>();
-
+                FizzBuzzNode firstnode = new FizzBuzzNode(43);
+                K_Ary_Tree MyTree = new K_Ary_Tree(firstnode);
                 
-            MyNewList=MyBF.BreadthFirstMethod(NewTree);
+                FizzBuzzNode child1 = new FizzBuzzNode(5);
+                FizzBuzzNode child2 = new FizzBuzzNode(3);
+                MyTree.Root.AddChild(child1);
+                MyTree.Root.AddChild(child2);
+                FizzBuzzNode child3 = new FizzBuzzNode(87);
+                FizzBuzzNode child4 = new FizzBuzzNode(9);
 
-                foreach (int x in MyNewList)
+                child1.AddChild(child3);
+                child1.AddChild(child4);
+                FizzBuzzNode child5 = new FizzBuzzNode(345);
+                child2.AddChild(child5);
+                FizzBuzzNode child6 = new FizzBuzzNode(97);
+                FizzBuzzNode child7 = new FizzBuzzNode(5);
+                child5.AddChild(child6);
+                child5.AddChild(child7);
+                List<string> MyList = new List<string>();
+                MyList = MyTree.FizzBuzzTreeMethod(MyTree);
+           foreach(var x in MyList)
                 {
-                    Console.Write(x + " - ");
+                    Console.WriteLine(x);
                 }
+                //    BinaryTree NewTree  = new BinaryTree();
+                //    NewTree.Root = (new Node(5));
+                //    NewTree.Root.Left = (new Node(10));
+                //    NewTree.Root.Right = (new Node(15));
+                //    NewTree.Root.Left.Left = (new Node(20));
+                //    NewTree.Root.Left.Right = (new Node(25));
+                //    NewTree.Root.Right.Left = (new Node(30));
+                //    NewTree.Root.Right.Right = (new Node(35));
+
+
+                //   BreadthFirst MyBF = new BreadthFirst();
+                //    List<int> MyNewList = new List<int>();
+
+
+                //MyNewList=MyBF.BreadthFirstMethod(NewTree);
+
+                //    foreach (int x in MyNewList)
+                //    {
+                //        Console.Write(x + " - ");
+                //    }
 
                 // Can successfully instantiate an empty linked list :)
                 //LinkedList list = new LinkedList();
