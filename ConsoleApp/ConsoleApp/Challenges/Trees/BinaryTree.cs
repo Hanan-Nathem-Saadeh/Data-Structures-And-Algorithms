@@ -10,24 +10,22 @@ namespace ConsoleApp.Challenges.Trees
     public class BinaryTree
     {
         public Node Root;
-        public List<int> MyList = new List<int>();
+
         //Create an empty tree without root
         public BinaryTree()
         {
             Root = null;
-            
+
         }
         // creat a new tree with one node which is the root
         public BinaryTree(Node newNode)
         {
             Root = newNode;
-
         }
-       
         //Code Challenge 16 Find Max Value 
         public int FindMax()
         {
-            var ValuesArray = PreOrder(Root);
+            var ValuesArray = PreOrder();
             int MaxValue = (int)ValuesArray[0];
             foreach (var Value in ValuesArray)
             {
@@ -41,34 +39,45 @@ namespace ConsoleApp.Challenges.Trees
 
 
         // Pre Order
-        public int[] PreOrder(Node Root)
+        public int[] PreOrder()
         {
-            try {
+            try
+            {
                 if (Root == null)
                 {
                     throw new Exception("Empty Tree ....");
                 }
-                MyList.Add(Root.Value);
-          
-            if (Root.Left != null)
+                return PreOrderHelper(this.Root);
+            }
+            catch (Exception ex)
             {
-                PreOrder(Root.Left);
+                throw new Exception(ex.Message);
             }
-            if (Root.Right != null)
+
+        }
+        public int[] PreOrderHelper(Node node)
+        {
+            List<int> MyList = new List<int>();
+            try
             {
-                PreOrder(Root.Right);
+
+                if (node != null)
+                {
+                    MyList.Add(node.Value);
+                    MyList.AddRange(PreOrderHelper(node.Left));
+                    MyList.AddRange(PreOrderHelper(node.Right));
+                }
+                return MyList.ToArray();
             }
-            return MyList.ToArray();
-            }
-            catch( Exception ex)
-            
+            catch (Exception ex)
+
             {
                 throw new Exception(ex.Message);
             }
         }
         // In Order
 
-        public int[]  InOrder( Node Root)
+        public int[] InOrder()
         {
             try
             {
@@ -76,14 +85,24 @@ namespace ConsoleApp.Challenges.Trees
                 {
                     throw new Exception("Empty Tree ....");
                 }
-                if (Root.Left != null)
+                return InOrderHelper(this.Root);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public int[] InOrderHelper(Node node)
+        {
+            List<int> MyList = new List<int>();
+            try
+            {
+
+                if (node != null)
                 {
-                    InOrder(Root.Left);
-                }
-                MyList.Add(Root.Value);
-                if (Root.Right != null)
-                {
-                    InOrder(Root.Right);
+                    MyList.AddRange(InOrderHelper(node.Left));
+                    MyList.Add(node.Value);
+                    MyList.AddRange(InOrderHelper(node.Right));
                 }
                 return MyList.ToArray();
             }
@@ -93,9 +112,10 @@ namespace ConsoleApp.Challenges.Trees
                 throw new Exception(ex.Message);
             }
         }
+
         // Post Order
 
-        public int[] PostOrder( Node Root)
+        public int[] PostOrder()
         {
             try
             {
@@ -103,16 +123,26 @@ namespace ConsoleApp.Challenges.Trees
                 {
                     throw new Exception("Empty Tree ....");
                 }
-                if (Root.Left != null)
-                {
-                    PostOrder(Root.Left);
-                }
+                return PostOrderHelper(this.Root);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public int[] PostOrderHelper(Node node)
+        {
+            List<int> MyList = new List<int>();
+            try
+            {
 
-                if (Root.Right != null)
+                if (node != null)
                 {
-                    PostOrder(Root.Right);
+                    MyList.AddRange(PostOrderHelper(node.Left));
+
+                    MyList.AddRange(PostOrderHelper(node.Right));
+                    MyList.Add(node.Value);
                 }
-                MyList.Add(Root.Value);
                 return MyList.ToArray();
             }
             catch (Exception ex)
@@ -121,5 +151,7 @@ namespace ConsoleApp.Challenges.Trees
                 throw new Exception(ex.Message);
             }
         }
+
     }
 }
+
