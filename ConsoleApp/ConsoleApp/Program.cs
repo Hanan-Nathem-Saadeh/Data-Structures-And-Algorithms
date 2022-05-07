@@ -20,30 +20,40 @@ namespace ConsoleApp
                 Console.WriteLine("**************** HANAN NATHEM SAADEH *****************");
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
-                FizzBuzzNode firstnode = new FizzBuzzNode(43);
-                K_Ary_Tree MyTree = new K_Ary_Tree(firstnode);
-                
-                FizzBuzzNode child1 = new FizzBuzzNode(5);
-                FizzBuzzNode child2 = new FizzBuzzNode(3);
-                MyTree.Root.AddChild(child1);
-                MyTree.Root.AddChild(child2);
-                FizzBuzzNode child3 = new FizzBuzzNode(87);
-                FizzBuzzNode child4 = new FizzBuzzNode(9);
 
-                child1.AddChild(child3);
-                child1.AddChild(child4);
-                FizzBuzzNode child5 = new FizzBuzzNode(345);
-                child2.AddChild(child5);
-                FizzBuzzNode child6 = new FizzBuzzNode(97);
-                FizzBuzzNode child7 = new FizzBuzzNode(5);
-                child5.AddChild(child6);
-                child5.AddChild(child7);
-                List<string> MyList = new List<string>();
-                MyList = MyTree.FizzBuzzTreeMethod(MyTree);
-           foreach(var x in MyList)
-                {
-                    Console.WriteLine(x);
-                }
+                Node node = new Node(-9);
+                BinaryTree tree = new BinaryTree(node);
+                node.Left = new Node(-3);
+                node.Left.Left = new Node(-12);
+                node.Left.Left = new Node(12);
+                node.Right = new Node(4);
+                int x = tree.FindMax();
+                Console.WriteLine(x);
+
+                //     FizzBuzzNode firstnode = new FizzBuzzNode(43);
+                //     K_Ary_Tree MyTree = new K_Ary_Tree(firstnode);
+
+                //     FizzBuzzNode child1 = new FizzBuzzNode(5);
+                //     FizzBuzzNode child2 = new FizzBuzzNode(3);
+                //     MyTree.Root.AddChild(child1);
+                //     MyTree.Root.AddChild(child2);
+                //     FizzBuzzNode child3 = new FizzBuzzNode(87);
+                //     FizzBuzzNode child4 = new FizzBuzzNode(9);
+
+                //     child1.AddChild(child3);
+                //     child1.AddChild(child4);
+                //     FizzBuzzNode child5 = new FizzBuzzNode(345);
+                //     child2.AddChild(child5);
+                //     FizzBuzzNode child6 = new FizzBuzzNode(97);
+                //     FizzBuzzNode child7 = new FizzBuzzNode(5);
+                //     child5.AddChild(child6);
+                //     child5.AddChild(child7);
+                //     List<string> MyList = new List<string>();
+                //     MyList = MyTree.FizzBuzzTreeMethod(MyTree);
+                //foreach(var x in MyList)
+                //     {
+                //         Console.WriteLine(x);
+                //     }
                 //    BinaryTree NewTree  = new BinaryTree();
                 //    NewTree.Root = (new Node(5));
                 //    NewTree.Root.Left = (new Node(10));

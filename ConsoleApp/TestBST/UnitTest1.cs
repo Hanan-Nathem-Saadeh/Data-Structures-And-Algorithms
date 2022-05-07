@@ -64,7 +64,7 @@ namespace TestBST
             testTree.Root.Left.Left = new Node(8);
             testTree.Root.Left.Right = new Node(10);
             int[] ArrayOfObject = new int[] { 2, 4, 8, 10, 6 };
-            Assert.Equal(ArrayOfObject, testTree.PreOrder(testTree.Root));
+            Assert.Equal(ArrayOfObject, testTree.PreOrder());
         }
         // 5- Can successfully return a collection from an inorder traversal
         [Fact]
@@ -77,7 +77,7 @@ namespace TestBST
             testTree.Root.Left.Left = new Node(8);
             testTree.Root.Left.Right = new Node(10);
             int[] ArrayOfObject = new int[] { 8, 4, 10, 2, 6 };
-            Assert.Equal(ArrayOfObject, testTree.InOrder(testTree.Root));
+            Assert.Equal(ArrayOfObject, testTree.InOrder());
         }
         // 6- Can successfully return a collection from a postorder traversal
         [Fact]
@@ -90,7 +90,7 @@ namespace TestBST
             testTree.Root.Left.Left = new Node(8);
             testTree.Root.Left.Right = new Node(10);
             int[] ArrayOfObject = new int[] { 8, 10, 4, 6, 2 };
-            Assert.Equal(ArrayOfObject, testTree.PostOrder(testTree.Root));
+            Assert.Equal(ArrayOfObject, testTree.PostOrder());
         }
 
 
