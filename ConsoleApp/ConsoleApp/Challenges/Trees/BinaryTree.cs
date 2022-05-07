@@ -25,19 +25,43 @@ namespace ConsoleApp.Challenges.Trees
         //Code Challenge 16 Find Max Value 
         public int FindMax()
         {
-            var ValuesArray = PreOrder();
-            int MaxValue = (int)ValuesArray[0];
-            foreach (var Value in ValuesArray)
+            try
             {
-                if ((int)Value > MaxValue)
+                if (Root == null)
                 {
-                    MaxValue = (int)Value;
+                    throw new Exception("Empty ....");
                 }
+                else
+                    return MaxHelper(this.Root);
+
             }
-            return MaxValue;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+         
         }
+        public int MaxHelper(Node Root)
+        {
+            
+            if (Root == null)
+            {
+                return int.MinValue;
+            }
 
-
+                    int MaxValue = Root.Value;
+                    int MaxLeftValue = MaxHelper( Root.Left);
+                    int MaxRightValue = MaxHelper(Root.Right);
+                    if (MaxLeftValue > MaxValue)
+                    {
+                        MaxValue = MaxLeftValue;
+                    }
+                    if (MaxRightValue > MaxValue)
+                    {
+                        MaxValue = MaxRightValue;
+                    }
+                    return MaxValue;
+        }
         // Pre Order
         public int[] PreOrder()
         {
@@ -47,6 +71,7 @@ namespace ConsoleApp.Challenges.Trees
                 {
                     throw new Exception("Empty Tree ....");
                 }
+                else 
                 return PreOrderHelper(this.Root);
             }
             catch (Exception ex)
@@ -58,15 +83,17 @@ namespace ConsoleApp.Challenges.Trees
         public int[] PreOrderHelper(Node node)
         {
             List<int> MyList = new List<int>();
+         
             try
             {
 
                 if (node != null)
                 {
-                    MyList.Add(node.Value);
+                MyList.Add(node.Value);
                     MyList.AddRange(PreOrderHelper(node.Left));
                     MyList.AddRange(PreOrderHelper(node.Right));
                 }
+                 
                 return MyList.ToArray();
             }
             catch (Exception ex)
@@ -85,7 +112,8 @@ namespace ConsoleApp.Challenges.Trees
                 {
                     throw new Exception("Empty Tree ....");
                 }
-                return InOrderHelper(this.Root);
+                else
+                    return InOrderHelper(this.Root);
             }
             catch (Exception ex)
             {
@@ -123,7 +151,8 @@ namespace ConsoleApp.Challenges.Trees
                 {
                     throw new Exception("Empty Tree ....");
                 }
-                return PostOrderHelper(this.Root);
+                else
+                    return PostOrderHelper(this.Root);
             }
             catch (Exception ex)
             {
