@@ -41,7 +41,7 @@ In the fourth pass 16<42&23  => 16 is smaller than 42,23 so insert the element 1
 
 Pass 5:
 
-![](../../img/Phase5.png)
+![](../../img/phase5.png)
 
 In the fifth pass 15<42&23&16  => 15 is smaller than 42,23,16 so insert the element 15 into the previous position until 15>8
 
