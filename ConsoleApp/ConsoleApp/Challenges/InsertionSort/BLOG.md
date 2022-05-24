@@ -35,6 +35,7 @@ Pass 4:
 
 ![](../../img/Phase4.png)
 
+
 In the fourth pass 16<42&23  => 16 is smaller than 42,23 so insert the element 16 into the previous position until 16>8
 
 
