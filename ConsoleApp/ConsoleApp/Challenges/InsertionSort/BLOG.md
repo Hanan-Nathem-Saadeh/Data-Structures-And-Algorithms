@@ -25,6 +25,7 @@ In the second pass 23>8  => 23 is greater than 8 so Don't swap , we do not move 
 
 Pass 3:
 
+![](../../img/phase3.png)
 
 
 In the third pass 42>23  => 42 is greater than 23 so Don't swap , we do not move the element 42 and the array stays in the same order.
