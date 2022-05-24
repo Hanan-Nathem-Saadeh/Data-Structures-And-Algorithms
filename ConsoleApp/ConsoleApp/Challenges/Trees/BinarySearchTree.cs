@@ -65,5 +65,20 @@ namespace ConsoleApp.Challenges.Trees
             }
             return false;
         }
+        public int SumOddNumber()
+        {
+            return SumOddNumberHelper(Root);
+        }
+        public int SumOddNumberHelper(Node root)
+        {
+            int[] MyArray = InOrder();
+            int SumOddNumbers = 0;
+            for (int i = 0; i < MyArray.Length; i++)
+            {
+                if (MyArray[i] % 2 != 0)
+                    SumOddNumbers +=  MyArray[i];
+            }
+            return SumOddNumbers;
+        }
     }
 }
