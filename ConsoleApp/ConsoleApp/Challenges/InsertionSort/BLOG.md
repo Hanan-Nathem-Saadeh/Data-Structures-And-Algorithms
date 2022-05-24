@@ -33,7 +33,7 @@ In the third pass 42>23  => 42 is greater than 23 so Don't swap , we do not move
 
 Pass 4:
 
-![](../../img/Phase4.png)
+![](../../img/phase4.png)
 
 
 In the fourth pass 16<42&23  => 16 is smaller than 42,23 so insert the element 16 into the previous position until 16>8
