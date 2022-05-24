@@ -30,7 +30,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMaxTree", "TestMaxTree\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBrethFirstMethod", "TestBrethFirstMethod\TestBrethFirstMethod.csproj", "{F6B5E803-AEFB-4E70-A0BA-9A8786EE0462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFizzBuzzMethod", "TestFizzBuzzMethod\TestFizzBuzzMethod.csproj", "{5DBE3439-6640-485D-9AB6-517D59460937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFizzBuzzMethod", "TestFizzBuzzMethod\TestFizzBuzzMethod.csproj", "{5DBE3439-6640-485D-9AB6-517D59460937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOddInTreeTest", "SumOddInTreeTest\SumOddInTreeTest.csproj", "{86F4D823-BBC6-4E0A-A04A-308501941FF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +84,10 @@ Global
 		{5DBE3439-6640-485D-9AB6-517D59460937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DBE3439-6640-485D-9AB6-517D59460937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DBE3439-6640-485D-9AB6-517D59460937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F4D823-BBC6-4E0A-A04A-308501941FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F4D823-BBC6-4E0A-A04A-308501941FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F4D823-BBC6-4E0A-A04A-308501941FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F4D823-BBC6-4E0A-A04A-308501941FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{BDB50203-FBEB-4EC3-A003-AB4807D9FEF4} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{F6B5E803-AEFB-4E70-A0BA-9A8786EE0462} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{5DBE3439-6640-485D-9AB6-517D59460937} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
+		{86F4D823-BBC6-4E0A-A04A-308501941FF9} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87865C56-DE57-44DA-AA8E-A566E0CE4120}
