@@ -18,7 +18,7 @@ In the first pass 8>4 => 8 is greater than 4 so swap 4 and 8 let 4 in the temp, 
 
 Pass 2:
 
-![](../../img/Phase2.png)
+![](../../img/phase2.png)
 
 In the second pass 23>8  => 23 is greater than 8 so Don't swap , we do not move the element 23 and the array stays in the same order.
 
