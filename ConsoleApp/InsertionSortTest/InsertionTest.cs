@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using ConsoleApp.Challenges.InsertionSort;
+
 namespace InsertionSortTest
 {
     public class InsertionTest
