@@ -40,9 +40,9 @@ ALGORITHM Merge(left, right, arr)
 
 # Whiteboard Process
 
-![](../../img/MergeSortWB.png)
+![](../../../img/MergeSortWB.png)
 
-![](../../img/mergeSortPhases.png)
+![](../../../img/mergeSortPhases.png)
 
 pass 1 => 
 [8,4,23,42,16,15]
@@ -86,11 +86,12 @@ left[16]
 
 # Trace 
 
-![](../../img/MergeSort1.png)
+![](../../../img/MergeSort1.png)
 
 # Test
 
-![](../../img/mergeSortTest.png)
+![](../../../img/mergeSortTest.png)
+
 # Efficency
 
 Time: O(n log n)
