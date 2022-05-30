@@ -85,3 +85,10 @@ left[16]
 # Trace 
 
 ![](../../../img/MergeSort1.png)
+
+# Efficency
+
+Time: O(n log n)
+
+Space: O(n)
+
