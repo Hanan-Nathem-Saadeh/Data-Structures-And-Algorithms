@@ -4,7 +4,8 @@ Insertion Sort is an algorithem to sort the element of the array in a sort sequa
 
 ## Whiteboard Process
 
-![](../../img/InsertionsSort.png)
+![](../../../img/InsertionsSort.png)
+
 ## Approach & Efficiency
 
 ### Big O Complexity
