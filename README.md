@@ -24,5 +24,5 @@
 | 16      | Tree-Breadth-First | [Tree-Breadth-First](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/tree-breadth-first/ConsoleApp/ConsoleApp/Challenges/Trees/BreathFirsrREADME.md)|
 | 17      | Tree-Fizz-Buzz | [Tree-Fizz-Buzz](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Trees/tree-fizz-buzz/tree-fizz-buzz.md)|
 | 18      | Sum-Odd-Numbers-In-BST | [Sum-Odd-Numbers-In-BST](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Trees/SumOddInBST.md)|
-| 26      | Insertion-Sort | [Insertion-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/InsertionSort/BLOG.md)|
+| 26      | Insertion-Sort | [Insertion-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/InsertionSort)|
 | 27      | Merge-Sort | [Merge-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/MergeSort)|
