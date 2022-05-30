@@ -3,7 +3,7 @@ Insertion Sort is an algorithem to sort the element of the array in a sort sequa
 
 # Pseudo Code
 
-![](../../img/PsudueCode.png)
+![](../../../img/PsudueCode.png)
 
 # Trace
 
@@ -11,21 +11,21 @@ Sample Array => [8,4,23,42,16,15]
 
 Pass 1:
 
-![](../../img/Phase1.png)
+![](../../../img/Phase1.png)
 
 In the first pass 8>4 => 8 is greater than 4 so swap 4 and 8 let 4 in the temp, then let the value of the second element in the first index, and finally let the second index = temp. 
 
 
 Pass 2:
 
-![](../../img/phase2.png)
+![](../../../img/phase2.png)
 
 In the second pass 23>8  => 23 is greater than 8 so Don't swap , we do not move the element 23 and the array stays in the same order.
 
 
 Pass 3:
 
-![](../../img/phase3.png)
+![](../../../img/phase3.png)
 
 
 In the third pass 42>23  => 42 is greater than 23 so Don't swap , we do not move the element 42 and the array stays in the same order.
@@ -33,7 +33,7 @@ In the third pass 42>23  => 42 is greater than 23 so Don't swap , we do not move
 
 Pass 4:
 
-![](../../img/phase4.png)
+![](../../../img/phase4.png)
 
 
 In the fourth pass 16<42&23  => 16 is smaller than 42,23 so insert the element 16 into the previous position until 16>8
@@ -41,7 +41,7 @@ In the fourth pass 16<42&23  => 16 is smaller than 42,23 so insert the element 1
 
 Pass 5:
 
-![](../../img/phase5.png)
+![](../../../img/phase5.png)
 
 In the fifth pass 15<42&23&16  => 15 is smaller than 42,23,16 so insert the element 15 into the previous position until 15>8
 
