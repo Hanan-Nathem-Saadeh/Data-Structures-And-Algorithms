@@ -8,28 +8,23 @@ namespace ConsoleApp.Challenges.Hashtable
 {
     public class Hashtable
     {
-        public string[] HashTableContent = new string [100];
+
+        private int size { get; set; }
+        private Node[] HashTableContent { get; set; }
+        public Hashtable(int size)
+        {
+        this.size = size;
+       HashTableContent = new Node[size];
+        }
+        
        
         public void Set (string Key , string Value)
         {
             int KeyAfterHash = Hash(Key);
-           if(HashTableContent[KeyAfterHash]==null)
-            {
-                HashTableContent[KeyAfterHash] = Value;
-            }
-           else
-            {
-                int i = KeyAfterHash;
-                while (HashTableContent[i]!=null)
-                {
-                    i = (i + 1) % Hash(Key);
-                }
-                HashTableContent[i]=Value;
-
-            }
-            
+            Node newNode = new Node(Key,Value);
+            HashTableContent[KeyAfterHash] = newNode;
         }
-        public string get(string Key)
+        public Node get(string Key)
         {
             int HashedKey = Hash(Key);
             if (contains(Key))
@@ -50,15 +45,23 @@ namespace ConsoleApp.Challenges.Hashtable
             }
             return false;
         }
-        //public List<int> keys()
-        //{
+        public List<string> keys()
+        {
+            List<string> KeyList = new List<string>();
+            for (int i = 0; i < HashTableContent.Length; i++)
+            {
+                if (HashTableContent[i] !=null)
+                {
+                    KeyList.Add(HashTableContent[i].Key);
+                }
+            }
+            return KeyList;
 
-
-        //}
+        }
         public int Hash(string Key)
         {
             int num = 0;
-            byte [] KeyASCII = Encoding.ASCII.GetBytes(Key);
+            byte[] KeyASCII = Encoding.ASCII.GetBytes(Key);
             foreach (char item in KeyASCII)
             {
                 num += item;
