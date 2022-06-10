@@ -23,7 +23,7 @@ Implement a Hashtable Class with the following methods:
 - Set(string key, string value)=> Time Complexity =  O(1)
 
 - Hash(string key) => Time Complexity O(n)
-- 
+
 - Keys() => Time Complexity O(n)
 
 - Contains(string key) => Time Complexity O(1)
