@@ -26,4 +26,6 @@
 | 18      | Sum-Odd-Numbers-In-BST | [Sum-Odd-Numbers-In-BST](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Trees/SumOddInBST.md)|
 | 26      | Insertion-Sort | [Insertion-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/InsertionSort)|
 | 27      | Merge-Sort | [Merge-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/MergeSort)|
+| 28      | Quick-Sort | [Quick-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/QuickSort)|
+| 29      | Mock Interviews | [Mock Interviews](https://docs.google.com/spreadsheets/d/15kzQYG8X1M6io0k1H8N5OcGHz1MhQJBqw62fvA1Nwxg/edit?usp=sharing)|
 | 30      | Hash Table | [Hash-Tablet](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/Hashtable)|
