@@ -68,6 +68,27 @@ namespace ConsoleApp.Challenges.Hashtable
             }
             return (num % HashTableContent.Length);
         }
+        public string RepeatedWord(string sentence)
+        {
+            string[] stringArray = sentence.Split(' ', '-', '.', ',');
+            for (int i = 0; i < stringArray.Length; i++)
+            {
+                if (stringArray[i] != "")
+                {
+                    if (contains(stringArray[i].ToUpper()))
+                    {
+                        return stringArray[i];
+                    }
+                    else
+                    {
+                       Set(stringArray[i].ToUpper(),null);
+                    }
+                }
+            }
+            return "In this sentence there is no Repeated word !!";
+
+        }
+
 
 
     }

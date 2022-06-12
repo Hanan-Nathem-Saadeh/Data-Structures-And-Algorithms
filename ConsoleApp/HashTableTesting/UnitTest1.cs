@@ -84,6 +84,34 @@ namespace HashTableTesting
             Assert.Equal("Hanan Nathem Jalal Saadeh", MyTable.get("H").Value);
 
         }
-
+        //Code Challenge 31
+        // Case 1 
+        [Fact]
+        public void Test8()
+        {
+            string sentence = "Hello word From Hanan";
+            Assert.Equal("In this sentence there is no Repeated word !!", MyTable.RepeatedWord(sentence));
+        }
+        // Case 2
+        [Fact]
+        public void test9()
+        {
+            string sentence = "Once upon a time, there was a brave princess who...";
+            Assert.Equal("a", MyTable.RepeatedWord(sentence));
+        }
+        // Case 3
+        [Fact]
+        public void test10()
+        {
+            string sentence = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...";
+            Assert.Equal("it", MyTable.RepeatedWord(sentence));
+        }
+        // Case 4
+        [Fact]
+        public void test11()
+        {
+            string sentence = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+            Assert.Equal("summer", MyTable.RepeatedWord(sentence));
+        }
     }
 }
