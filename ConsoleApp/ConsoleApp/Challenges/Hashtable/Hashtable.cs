@@ -88,6 +88,27 @@ namespace ConsoleApp.Challenges.Hashtable
             return "In this sentence there is no Repeated word !!";
 
         }
+        public Hashtable LeftJoin(Hashtable LeftSide, Hashtable RightSide)
+
+        {
+            foreach (var key in RightSide.keys())
+            {
+                int HashIndex = Hash(key);
+                if (!LeftSide.contains(key))
+                {
+                    Console.WriteLine("Not Exsist ... !");
+                }
+                else
+                {
+                    object Result = RightSide.get(key);
+                    LeftSide.Set(key, Result.ToString());
+                }
+            }
+            return LeftSide;
+
+        }
+        
+
 
 
 
