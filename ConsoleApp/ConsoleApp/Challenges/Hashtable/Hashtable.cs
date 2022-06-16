@@ -96,17 +96,19 @@ namespace ConsoleApp.Challenges.Hashtable
                 int HashIndex = Hash(key);
                 if (!LeftSide.contains(key))
                 {
-                    Console.WriteLine("The Key Not Exist");
+                    Console.WriteLine("Not Exsist ... !");
                 }
                 else
                 {
-                    object answer = RightSide.get(key);
-                    LeftSide.Set(key, answer.ToString());
+                    object Result = RightSide.get(key);
+                    LeftSide.Set(key, Result.ToString());
                 }
             }
             return LeftSide;
 
         }
+        
+
 
 
 

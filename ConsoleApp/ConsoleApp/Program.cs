@@ -6,6 +6,7 @@ using ConsoleApp.Challenges.Trees;
 using ConsoleApp.Challenges;
 using System.Collections.Generic;
 using ConsoleApp.Challenges.Trees.tree_fizz_buzz;
+using ConsoleApp.Challenges.Hashtable;
 
 namespace ConsoleApp
 {
@@ -21,14 +22,18 @@ namespace ConsoleApp
                 Console.WriteLine("******************************************************");
                 Console.WriteLine();
 
-                Node node = new Node(-9);
-                BinaryTree tree = new BinaryTree(node);
-                node.Left = new Node(-3);
-                node.Left.Left = new Node(-12);
-                node.Left.Left = new Node(12);
-                node.Right = new Node(4);
-                int x = tree.FindMax();
-                Console.WriteLine(x);
+
+                
+
+
+                //Node node = new Node(-9);
+                //BinaryTree tree = new BinaryTree(node);
+                //node.Left = new Node(-3);
+                //node.Left.Left = new Node(-12);
+                //node.Left.Left = new Node(12);
+                //node.Right = new Node(4);
+                //int x = tree.FindMax();
+                //Console.WriteLine(x);
 
                 //     FizzBuzzNode firstnode = new FizzBuzzNode(43);
                 //     K_Ary_Tree MyTree = new K_Ary_Tree(firstnode);

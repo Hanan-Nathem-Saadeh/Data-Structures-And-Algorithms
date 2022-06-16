@@ -42,8 +42,8 @@ namespace HashTableTesting
             List<string> KeyList = new List<string>();
             KeyList.Add("E");
             KeyList.Add("H");
-            KeyList.Add("N");            
-            Assert.Equal(KeyList,MyTable.keys());
+            KeyList.Add("N");
+            Assert.Equal(KeyList, MyTable.keys());
         }
         //Successfully handle a collision within the hashtable
         [Fact]
@@ -114,31 +114,62 @@ namespace HashTableTesting
             Assert.Equal("summer", MyTable.RepeatedWord(sentence));
         }
         // Code challenge 33 
+        [Fact]
+        public void Test12()
+        {
+            Hashtable MyTable1 = new Hashtable(1024);
+            Hashtable MyTable2 = new Hashtable(1024);
+            MyTable1.Set("diligent", "employed");
+            MyTable1.Set("fond", "enamored");
+            MyTable1.Set("guide", "usher");
+          
+            ///////////////////////////////////////////
+            MyTable2.Set("diligent", "idle");
+            MyTable2.Set("fond", "averse");
+           
+            MyTable1.LeftJoin(MyTable1, MyTable2);
+            List<string> keys = MyTable1.keys();
+            List<string> myResultList = new List<string>() { "fond", "guide", "diligent" };
+            Assert.Equal(myResultList, keys);
+       }
+        [Fact]
+        public void Test13()
+        {
+            Hashtable MyTable1 = new Hashtable(1024);
+            Hashtable MyTable2 = new Hashtable(1024);
+            MyTable1.Set("diligent", "employed");
+            MyTable1.Set("fond", "enamored");
+          
+            ///////////////////////////////////////////
+            MyTable2.Set("diligent", "idle");
+            MyTable2.Set("fond", "averse");
+            MyTable2.Set("guide", "follow");
+            
+            MyTable1.LeftJoin(MyTable1, MyTable2);
+            List<string> keys = MyTable1.keys();
+            List<string> myResultList = new List<string>() { "fond", "diligent" };
+            Assert.Equal(myResultList, keys);
+        }
+        [Fact]
+        public void Test14()
+        {
+            Hashtable MyTable1 = new Hashtable(1024);
+            Hashtable MyTable2 = new Hashtable(1024);
+            MyTable1.Set("diligent", "employed");
+           
 
-        //    public void Test12()
-        //{
-        //    Hashtable MyTable1 = new Hashtable(1024);
-        //    Hashtable MyTable2 = new Hashtable(1024);
-        //    MyTable1.Set("diligent", "employed");
-        //    MyTable1.Set("fond", "enamored");
-        //    MyTable1.Set("guide", "usher");
-        //    MyTable1.Set("outfit", "garb");
-        //    MyTable1.Set("wrath", "anger");
-        //    ///////////////////////////////////////////
-        //    MyTable2.Set("diligent", "idle");
-        //    MyTable2.Set("fond", "averse");
-        //    MyTable2.Set("guide", "follow");
-        //    MyTable2.Set("flow", "jam");
-        //    MyTable2.Set("wrath", "delight");
-        //    MyTable1.LeftJoin(MyTable1,MyTable2);
-        //    List<string> keys = MyTable1.keys();
-        //    foreach (var item in keys)
-        //    {
-        //        Console.WriteLine(map1.GetValue(item));
-        //    }
+            ///////////////////////////////////////////
+          
+          
+            MyTable2.Set("guide", "follow");
+
+            MyTable1.LeftJoin(MyTable1, MyTable2);
+            List<string> keys = MyTable1.keys();
+            List<string> myResultList = new List<string>() { "diligent" };
+            Assert.Equal(myResultList, keys);
         }
 
 
 
-      
+    }
 }
