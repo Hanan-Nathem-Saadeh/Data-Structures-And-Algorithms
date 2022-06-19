@@ -2,7 +2,8 @@ using System;
 using Xunit;
 using ConsoleApp.Challenges.Hashtable;
 using System.Collections.Generic;
-
+using ConsoleApp.Challenges.Trees;
+using ConsoleApp.Challenges.Trees;
 namespace HashTableTesting
 {
     public class UnitTest1
@@ -167,6 +168,71 @@ namespace HashTableTesting
             List<string> keys = MyTable1.keys();
             List<string> myResultList = new List<string>() { "diligent" };
             Assert.Equal(myResultList, keys);
+        }
+
+        // Code challenge 32 
+        // test 1
+        [Fact]
+        public void test15 ()
+        {
+
+            BinaryTree MyTree = new BinaryTree();
+            
+            MyTree.Root = (new ConsoleApp.Challenges.Trees.Node(10));
+            MyTree.Root.Left = (new ConsoleApp.Challenges.Trees.Node(20));
+            MyTree.Root.Right = (new ConsoleApp.Challenges.Trees.Node(30));
+            MyTree.Root.Left.Left = (new ConsoleApp.Challenges.Trees.Node(40));
+            MyTree.Root.Left.Right = (new ConsoleApp.Challenges.Trees.Node(50));
+
+            BinaryTree Mytree2 = new BinaryTree();
+            Mytree2.Root = (new ConsoleApp.Challenges.Trees.Node(5));
+            Mytree2.Root.Left = (new ConsoleApp.Challenges.Trees.Node(10));
+            Mytree2.Root.Right = (new ConsoleApp.Challenges.Trees.Node(15));
+            Mytree2.Root.Left.Left = (new ConsoleApp.Challenges.Trees.Node(20));
+            Mytree2.Root.Left.Right = (new ConsoleApp.Challenges.Trees.Node(25));
+
+
+            TreeIntersection IntersectionTree = new TreeIntersection();
+            List<int> intersections = IntersectionTree.tree_intersection(MyTree, Mytree2);
+            List<int> result = new List<int>() { 10,20 };
+            Assert.Equal(result, intersections);
+        }
+
+        [Fact]
+        public void test16()
+        {
+
+            BinaryTree tree = new BinaryTree();
+            BinaryTree tree2 = new BinaryTree();
+            tree.Root = null;
+            tree2.Root = (new ConsoleApp.Challenges.Trees.Node(5));
+            TreeIntersection Intersection = new TreeIntersection();
+            
+            Assert.Null( Intersection.tree_intersection(tree, tree2));
+        }
+        [Fact]
+        public void test17()
+        {
+
+            BinaryTree MyTree = new BinaryTree();
+
+            MyTree.Root = (new ConsoleApp.Challenges.Trees.Node(2));
+            MyTree.Root.Left = (new ConsoleApp.Challenges.Trees.Node(4));
+            MyTree.Root.Right = (new ConsoleApp.Challenges.Trees.Node(6));
+            MyTree.Root.Left.Left = (new ConsoleApp.Challenges.Trees.Node(8));
+            MyTree.Root.Left.Right = (new ConsoleApp.Challenges.Trees.Node(10));
+
+            BinaryTree Mytree2 = new BinaryTree();
+            Mytree2.Root = (new ConsoleApp.Challenges.Trees.Node(12));
+            Mytree2.Root.Left = (new ConsoleApp.Challenges.Trees.Node(14));
+            Mytree2.Root.Right = (new ConsoleApp.Challenges.Trees.Node(16));
+            Mytree2.Root.Left.Left = (new ConsoleApp.Challenges.Trees.Node(18));
+            Mytree2.Root.Left.Right = (new ConsoleApp.Challenges.Trees.Node(20));
+
+
+            TreeIntersection IntersectionTree = new TreeIntersection();
+            List<int> intersections = IntersectionTree.tree_intersection(MyTree, Mytree2);
+            Assert.Empty(IntersectionTree.tree_intersection(MyTree, Mytree2));
         }
 
 
