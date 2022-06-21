@@ -40,7 +40,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMergeSort", "TestMergeS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestQuickSort", "TestQuickSort\TestQuickSort.csproj", "{AD15FA2A-0E3F-4688-8B3D-8C3CCB1261B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableTesting", "HashTableTesting\HashTableTesting.csproj", "{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTableTesting", "HashTableTesting\HashTableTesting.csproj", "{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTest", "GraphTest\GraphTest.csproj", "{ECC6BBFF-F607-4549-B6E9-01F7A00A083E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -112,6 +114,10 @@ Global
 		{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC6BBFF-F607-4549-B6E9-01F7A00A083E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC6BBFF-F607-4549-B6E9-01F7A00A083E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC6BBFF-F607-4549-B6E9-01F7A00A083E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC6BBFF-F607-4549-B6E9-01F7A00A083E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +138,7 @@ Global
 		{A278CBFC-D079-4A1C-8404-0D9186E215CF} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{AD15FA2A-0E3F-4688-8B3D-8C3CCB1261B4} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 		{EDC983AE-8CB8-4E6A-B3C2-B74EEB0495CA} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
+		{ECC6BBFF-F607-4549-B6E9-01F7A00A083E} = {11EFFCFE-7B5E-4B3F-9FE7-E065C823AFB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87865C56-DE57-44DA-AA8E-A566E0CE4120}
