@@ -7,6 +7,10 @@ LEFT JOIN method returns all rows from the left table, even if there are no matc
 
 This means that a left join returns all the values from the left table, plus matched values from the right table or NULL in case of no matching join predicate. 
 
+# WhiteBoard
+
+![](../img/LeftJoin.png)
+
 ## Approach & Efficiency
 
 Write a function that LEFT JOINs two hashmaps into a single data structure.
