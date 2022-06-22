@@ -28,5 +28,8 @@
 | 27      | Merge-Sort | [Merge-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/MergeSort)|
 | 28      | Quick-Sort | [Quick-Sort](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/sorting/QuickSort)|
 | 29      | Mock Interviews | [Mock Interviews](https://docs.google.com/spreadsheets/d/15kzQYG8X1M6io0k1H8N5OcGHz1MhQJBqw62fvA1Nwxg/edit?usp=sharing)|
-| 30      | Hash Table | [Hash-Tablet](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/Hashtable)|
+| 30      | Hash Table | [Hash-Table](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/tree/main/ConsoleApp/ConsoleApp/Challenges/Hashtable)|
 | 31      | hashmap-repeated-word | [hashmap-repeated-word](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Hashtable/RepeatedWord.md)|
+| 32      | tree_intersection | [tree_intersection](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Hashtable/intersection.md)|
+| 33      | hashmap-left-join | [hashmap-left-join](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Hashtable/hashmap-left-join.md)|
+
