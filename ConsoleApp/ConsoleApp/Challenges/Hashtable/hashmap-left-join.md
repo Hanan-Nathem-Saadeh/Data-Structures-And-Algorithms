@@ -9,7 +9,7 @@ This means that a left join returns all the values from the left table, plus mat
 
 # WhiteBoard
 
-![](../img/LeftJoin.png)
+![](../../img/LeftJoin.png)
 
 ## Approach & Efficiency
 
