@@ -35,21 +35,48 @@ namespace ConsoleApp.Challenges.Graphs
             {
                 throw new Exception("This node is not exist");
             }
-            First.Neighbors.Add(Second);
+            First.addEdge(Second);
+           
         }
         public List<GraphNode> getNodes()
         {
             return MyGraph;
         }
-        public List<GraphNode> getNeighbors(GraphNode node)
+        public List<Edge> getNeighbors(GraphNode node)
         {
-            return MyGraph.Find(N => N.Value == node.Value).Neighbors;
+            return MyGraph.Find(v => v.Value == node.Value).edges;
         }
         public int Size()
         {
             return MyGraph.Count();
         }
+        // Code challenge 36
 
+        public List<GraphNode> BreadthFirst(GraphNode vertex)
+        {
+            List<GraphNode> visitedVertices = new List<GraphNode>();
+            visitedVertices.Add(vertex);
+            Queue<GraphNode> visitQueue = new Queue<GraphNode>();
+            visitQueue.Enqueue(vertex);
+            if (visitQueue.Count == 0)
+            {
+                throw new Exception("there is nodes added here");
+            }
+            while (visitQueue.Count != 0)
+            {
+                GraphNode front = visitQueue.Dequeue();
+                visitedVertices.Add(front);
+                foreach (Edge child in front.edges)
+                {
+                    GraphNode neighbor = child.getEnd();
+                    if (!visitedVertices.Contains(neighbor))
+                    {
+                        visitQueue.Enqueue(neighbor);
+                    }
+                }
+            }
+            return visitedVertices;
+        }
 
 
     }
