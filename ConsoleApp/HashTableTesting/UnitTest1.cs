@@ -116,58 +116,50 @@ namespace HashTableTesting
         }
         // Code challenge 33 
         [Fact]
-        public void Test12()
+        public void TestLeftHashtable()
         {
-            Hashtable MyTable1 = new Hashtable(1024);
-            Hashtable MyTable2 = new Hashtable(1024);
-            MyTable1.Set("diligent", "employed");
-            MyTable1.Set("fond", "enamored");
-            MyTable1.Set("guide", "usher");
-          
-            ///////////////////////////////////////////
-            MyTable2.Set("diligent", "idle");
-            MyTable2.Set("fond", "averse");
-           
-            MyTable1.LeftJoin(MyTable1, MyTable2);
-            List<string> keys = MyTable1.keys();
-            List<string> myResultList = new List<string>() { "fond", "guide", "diligent" };
-            Assert.Equal(myResultList, keys);
-       }
-        [Fact]
-        public void Test13()
-        {
-            Hashtable MyTable1 = new Hashtable(1024);
-            Hashtable MyTable2 = new Hashtable(1024);
-            MyTable1.Set("diligent", "employed");
-            MyTable1.Set("fond", "enamored");
-          
-            ///////////////////////////////////////////
-            MyTable2.Set("diligent", "idle");
-            MyTable2.Set("fond", "averse");
-            MyTable2.Set("guide", "follow");
-            
-            MyTable1.LeftJoin(MyTable1, MyTable2);
-            List<string> keys = MyTable1.keys();
-            List<string> myResultList = new List<string>() { "fond", "diligent" };
-            Assert.Equal(myResultList, keys);
+            Hashtable leftHashtable = new Hashtable(10);
+            leftHashtable.Set("diligent", "employed");
+            leftHashtable.Set("fond", "enamored");
+            leftHashtable.Set("guide", "usher");
+            leftHashtable.Set("outfit", "garb");
+            leftHashtable.Set("wrath", "anger");
+
+            Hashtable rightHashtable = new Hashtable(10);
+            rightHashtable.Set("diligent", "idle");
+            rightHashtable.Set("fond", "averse");
+            rightHashtable.Set("guide", "follow");
+            rightHashtable.Set("flow", "jam");
+            rightHashtable.Set("wrath", "delight");
+
+            var leftJoin = Hashtable.LeftJoin(leftHashtable, rightHashtable);
+
+            List<string[]> expectedList = new List<string[]> { new string[] { "font", "enamored", "averse" },
+                                                       new string[] {"wrath", "anger", "delight"},
+                                                       new string[] {"diligent", "employed", "idle"},
+                                                       new string[] {"outfit", "garb", null},
+                                                       new string[] {"guide", "usher", "follow" }
+            };
+
+            Assert.Contains(expectedList.ToString(), leftJoin.ToString());
         }
+
         [Fact]
-        public void Test14()
+        public void TestEmptyLeftHashtable()
         {
-            Hashtable MyTable1 = new Hashtable(1024);
-            Hashtable MyTable2 = new Hashtable(1024);
-            MyTable1.Set("diligent", "employed");
-           
+            Hashtable leftHashtable = null;
+            Hashtable rightHashtable = new Hashtable(10);
+            var list = Hashtable.LeftJoin(leftHashtable, rightHashtable);
+            Assert.Null(list);
+        }
 
-            ///////////////////////////////////////////
-          
-          
-            MyTable2.Set("guide", "follow");
-
-            MyTable1.LeftJoin(MyTable1, MyTable2);
-            List<string> keys = MyTable1.keys();
-            List<string> myResultList = new List<string>() { "diligent" };
-            Assert.Equal(myResultList, keys);
+        [Fact]
+        public void TestEmptyHashtables()
+        {
+            Hashtable leftHashtable = null;
+            Hashtable rightHashtable = null;
+            var result = Hashtable.LeftJoin(leftHashtable, rightHashtable);
+            Assert.Null(result);
         }
 
         // Code challenge 32 

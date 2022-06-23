@@ -88,26 +88,39 @@ namespace ConsoleApp.Challenges.Hashtable
             return "In this sentence there is no Repeated word !!";
 
         }
-        public Hashtable LeftJoin(Hashtable LeftSide, Hashtable RightSide)
-
+        public static List<string[]> LeftJoin(Hashtable left, Hashtable right)
         {
-            foreach (var key in RightSide.keys())
+            if ((left == null && right == null) || (left == null)) { return null; }
+
+            if (right == null)
             {
-                int HashIndex = Hash(key);
-                if (!LeftSide.contains(key))
+                List<string[]> leftList = new List<string[]>();
+                for (int i = 0; i < left.HashTableContent.Length; i++)
                 {
-                    Console.WriteLine("Not Exsist ... !");
+                    Node temp = left.HashTableContent[i];
+                    while (temp != null)
+                    {
+                        leftList.Add(new string[] { $"{temp.Key}", $"{temp.Value}" });
+                        temp = temp.Next;
+                    }
                 }
-                else
+                return leftList;
+            }
+
+            List<string[]> arrayList = new List<string[]>();
+            for (int i = 0; i < left.HashTableContent.Length; i++)
+            {
+                Node temp = left.HashTableContent[i];
+                while (temp != null)
                 {
-                    object Result = RightSide.get(key);
-                    LeftSide.Set(key, Result.ToString());
+                    arrayList.Add(new string[] { $"{temp.Key}", $"{temp.Value}", $"{right.get($"{temp.Key}")}" });
+                    temp = temp.Next;
                 }
             }
-            return LeftSide;
 
+            return arrayList;
         }
-        
+
 
 
 
