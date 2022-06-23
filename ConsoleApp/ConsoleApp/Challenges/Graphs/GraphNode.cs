@@ -9,16 +9,16 @@ namespace ConsoleApp.Challenges.Graphs
     public  class GraphNode
     {
         public int Value { get; set; }
-        public List<Edge> edges;
-        public bool Visited { get; set; }
-        public GraphNode(int Value)
+        public List<Edge> Edges;
+
+        public GraphNode(int value)
         {
-           this.Value = Value;
-            this.edges = new List<Edge>();
+            this.Value = value;
+            this.Edges = new List<Edge>();
         }
         public void addEdge(GraphNode endVertex)
         {
-            this.edges.Add(new Edge(this, endVertex));
+            this.Edges.Add(new Edge(this, endVertex));
         }
 
     }

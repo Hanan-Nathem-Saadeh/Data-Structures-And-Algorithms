@@ -10,10 +10,12 @@ namespace ConsoleApp.Challenges.Graphs
     {
         private GraphNode start;
         private GraphNode end;
-        public Edge(GraphNode startV, GraphNode endV)
+       
+
+        public Edge(GraphNode startNode, GraphNode endNode)
         {
-            this.start = startV;
-            this.end = endV;
+            this.start = startNode;
+            this.end = endNode;
         }
 
         public GraphNode getStart()
@@ -25,5 +27,6 @@ namespace ConsoleApp.Challenges.Graphs
         {
             return this.end;
         }
+
     }
 }
