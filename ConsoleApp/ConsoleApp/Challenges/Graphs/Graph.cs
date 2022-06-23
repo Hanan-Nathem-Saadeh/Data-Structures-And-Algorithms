@@ -11,21 +11,16 @@ namespace ConsoleApp.Challenges.Graphs
     public class Graph
     {
 
-        private List<GraphNode> MyGraph { get; set; }
-
-
+        private List<GraphNode> MyGraph;
+        public Graph()
+        {
+            this.MyGraph = new List<GraphNode>();
+            
+        }
         public GraphNode AddNode(int Value)
         {
             GraphNode newNode = new GraphNode(Value);
-            if (MyGraph.Contains(newNode))
-            {
-                throw new Exception("This node is exist on this Graph !");
-            }
-            else
-            {
-                MyGraph.Add(newNode);
-            }
-
+            MyGraph.Add(newNode);
             return newNode;
         }
 
@@ -35,16 +30,25 @@ namespace ConsoleApp.Challenges.Graphs
             {
                 throw new Exception("This node is not exist");
             }
+            Second.addEdge(First);
             First.addEdge(Second);
-           
         }
+
         public List<GraphNode> getNodes()
         {
-            return MyGraph;
+            if (MyGraph.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return MyGraph;
+
+            }
         }
         public List<Edge> getNeighbors(GraphNode node)
         {
-            return MyGraph.Find(v => v.Value == node.Value).edges;
+            return MyGraph.Find(v => v.Value == node.Value).Edges;
         }
         public int Size()
         {
@@ -66,7 +70,7 @@ namespace ConsoleApp.Challenges.Graphs
             {
                 GraphNode front = visitQueue.Dequeue();
                 visitedVertices.Add(front);
-                foreach (Edge child in front.edges)
+                foreach (Edge child in front.Edges)
                 {
                     GraphNode neighbor = child.getEnd();
                     if (!visitedVertices.Contains(neighbor))
