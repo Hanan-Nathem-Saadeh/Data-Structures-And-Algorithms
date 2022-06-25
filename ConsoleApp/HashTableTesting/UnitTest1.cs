@@ -148,7 +148,9 @@ namespace HashTableTesting
         public void TestEmptyLeftHashtable()
         {
             Hashtable leftHashtable = null;
-            Hashtable rightHashtable = new Hashtable(10);
+            Hashtable rightHashtable = new Hashtable(2);
+            rightHashtable.Set("fond", "enamored");
+            rightHashtable.Set("guide", "usher");
             var list = Hashtable.LeftJoin(leftHashtable, rightHashtable);
             Assert.Null(list);
         }

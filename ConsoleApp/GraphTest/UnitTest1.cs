@@ -82,6 +82,75 @@ namespace GraphTest
             Assert.Null(result);
         }
 
+        // code challenge 36
+        [Fact]
+        public void TestBreadthFirst1()
+        {
+          
+            GraphNode node1 = myGraph.AddNode(1);
+            myGraph.AddEdge(node1, node1);
+            List<GraphNode> result = myGraph.BreadthFirst(node1);
+            Assert.Equal(1, result[0].Edges[0].getEnd().Value);
+        }
+        [Fact]
+        public void TestBreadthFirst2()
+        {
+
+            GraphNode node1 = myGraph.AddNode(1);
+            GraphNode node2 = myGraph.AddNode(2);
+
+            myGraph.AddEdge(node1, node2);
+            List < GraphNode > mylist = myGraph.BreadthFirst(node1);
+            List<int> res = new List<int>();
+            for (int i = 0; i < mylist.Count; i++)
+            {
+                res.Add( mylist[i].Value);
+            }
+            List<int> expected = new List<int> { 1, 2 };
+            Assert.Equal(expected, res);
+        }
+        [Fact]
+        public void TestBreadthFirst3()
+        {
+
+            GraphNode node1 = myGraph.AddNode(1);
+            GraphNode node2 = myGraph.AddNode(2);
+            GraphNode node3 = myGraph.AddNode(3);
+            GraphNode node4 = myGraph.AddNode(4);
+            GraphNode node5 = myGraph.AddNode(5);
+
+            myGraph.AddEdge(node1, node2);
+            myGraph.AddEdge(node1, node3);
+            myGraph.AddEdge(node1, node4);
+            myGraph.AddEdge(node2, node5);
+            myGraph.AddEdge(node3, node5);
+            myGraph.AddEdge(node4, node5);
+            List<GraphNode> mylist = myGraph.BreadthFirst(node1);
+            List<int> res = new List<int>();
+            for (int i = 0; i < mylist.Count; i++)
+            {
+                res.Add(mylist[i].Value);
+            }
+            List<int> expected = new List<int> { 1, 2 ,3,4,5};
+            Assert.Equal(expected, res);
+        }
+
+
+
+
+
+        [Fact]
+        public void TestBreadthFirst4()
+        {
+          
+            GraphNode vertex = myGraph.AddNode(1);
+            GraphNode vertex1 = myGraph.AddNode(2);
+            myGraph.AddEdge(vertex, vertex1);
+            List<GraphNode> list = myGraph.BreadthFirst(vertex);
+            List<GraphNode> expected = new List<GraphNode> { vertex, vertex1 };
+            Assert.Equal(expected, list);
+        }
+
     }
     }
 

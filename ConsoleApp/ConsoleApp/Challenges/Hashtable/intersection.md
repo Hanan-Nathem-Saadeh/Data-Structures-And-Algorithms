@@ -4,7 +4,7 @@ Using your Hashmap implementation as a part of your algorithm, return a set of v
 
 
 # Whiteboard Process
-![](../../img/intersection.png)
+![](../../img/intersection2.png)
 
 # Approach & Efficiency
 Complexity:  

@@ -90,7 +90,8 @@ namespace ConsoleApp.Challenges.Hashtable
         }
         public static List<string[]> LeftJoin(Hashtable left, Hashtable right)
         {
-            if ((left == null && right == null) || (left == null)) { return null; }
+            if ((left == null && right == null) || (left == null))
+            { return null; }
 
             if (right == null)
             {
@@ -110,6 +111,7 @@ namespace ConsoleApp.Challenges.Hashtable
             List<string[]> arrayList = new List<string[]>();
             for (int i = 0; i < left.HashTableContent.Length; i++)
             {
+
                 Node temp = left.HashTableContent[i];
                 while (temp != null)
                 {
