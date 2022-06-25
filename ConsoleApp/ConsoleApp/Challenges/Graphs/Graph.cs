@@ -56,31 +56,36 @@ namespace ConsoleApp.Challenges.Graphs
         }
         // Code challenge 36
 
+
+
         public List<GraphNode> BreadthFirst(GraphNode vertex)
         {
             List<GraphNode> visitedVertices = new List<GraphNode>();
-            visitedVertices.Add(vertex);
             Queue<GraphNode> visitQueue = new Queue<GraphNode>();
+            List<GraphNode> visited = new List<GraphNode>();
             visitQueue.Enqueue(vertex);
+            visited.Add(vertex);
             if (visitQueue.Count == 0)
             {
-                throw new Exception("there is nodes added here");
+                throw new Exception("no nodes added");
             }
             while (visitQueue.Count != 0)
             {
                 GraphNode front = visitQueue.Dequeue();
                 visitedVertices.Add(front);
-                foreach (Edge child in front.Edges)
+                foreach (Edge child in ((GraphNode)front).Edges)
                 {
                     GraphNode neighbor = child.getEnd();
-                    if (!visitedVertices.Contains(neighbor))
+                    if (!visited.Contains(neighbor))
                     {
+                        visited.Add(neighbor);
                         visitQueue.Enqueue(neighbor);
                     }
                 }
             }
             return visitedVertices;
         }
+
 
 
     }

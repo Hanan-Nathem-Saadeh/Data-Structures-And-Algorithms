@@ -3,7 +3,7 @@
 Implement a breath first traversal on a graph
 
 #  Whiteboard Process
-![](../../img/GraphBreathFirst.png)
+![](../../img/BFGraph.png)
 
 # API
 
