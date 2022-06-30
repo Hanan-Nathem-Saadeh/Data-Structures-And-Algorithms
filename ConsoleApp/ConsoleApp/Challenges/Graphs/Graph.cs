@@ -12,26 +12,28 @@ namespace ConsoleApp.Challenges.Graphs
     {
 
         private List<GraphNode> MyGraph;
-        public Graph()
+        private bool isWeighted;
+        public Graph(bool inputIsWeighted)
         {
             this.MyGraph = new List<GraphNode>();
-            
+            this.isWeighted = inputIsWeighted;
         }
-        public GraphNode AddNode(int Value)
+        public GraphNode AddNode(string Value)
         {
             GraphNode newNode = new GraphNode(Value);
             MyGraph.Add(newNode);
             return newNode;
         }
 
-        public void AddEdge(GraphNode First, GraphNode Second)
+        public void AddEdge(GraphNode First, GraphNode Second , int weight)
         {
-            if (!MyGraph.Contains(First) || !MyGraph.Contains(Second))
+            if (!this.isWeighted)
             {
-                throw new Exception("This node is not exist");
+                weight = (int)(int?)null;
             }
-            Second.addEdge(First);
-            First.addEdge(Second);
+            First.addEdge(Second, weight);
+            First.addEdge(Second,weight);
+
         }
 
         public List<GraphNode> getNodes()
@@ -54,17 +56,18 @@ namespace ConsoleApp.Challenges.Graphs
         {
             return MyGraph.Count();
         }
+       
         // Code challenge 36
 
 
 
-        public List<GraphNode> BreadthFirst(GraphNode vertex)
+        public List<GraphNode> BreadthFirst(GraphNode node)
         {
-            List<GraphNode> visitedVertices = new List<GraphNode>();
+            List<GraphNode> visitedNodes = new List<GraphNode>();
             Queue<GraphNode> visitQueue = new Queue<GraphNode>();
             List<GraphNode> visited = new List<GraphNode>();
-            visitQueue.Enqueue(vertex);
-            visited.Add(vertex);
+            visitQueue.Enqueue(node);
+            visited.Add(node);
             if (visitQueue.Count == 0)
             {
                 throw new Exception("no nodes added");
@@ -72,7 +75,7 @@ namespace ConsoleApp.Challenges.Graphs
             while (visitQueue.Count != 0)
             {
                 GraphNode front = visitQueue.Dequeue();
-                visitedVertices.Add(front);
+                visitedNodes.Add(front);
                 foreach (Edge child in ((GraphNode)front).Edges)
                 {
                     GraphNode neighbor = child.getEnd();
@@ -83,8 +86,47 @@ namespace ConsoleApp.Challenges.Graphs
                     }
                 }
             }
-            return visitedVertices;
+            return visitedNodes;
         }
+
+        public int? BusinessTrip(Graph graph, string[] cities)
+        {
+            var total = 0;
+            for (int i = 0; i < cities.Length - 1; i++)
+            {
+                GraphNode node = graph.GetNodeByValue(cities[i]);
+                List<Edge> neighbors = graph.getNeighbors(node);
+                for (var j = 0; j < neighbors.Count; j++)
+                {
+                    if (neighbors[j].getStart().Value == node.Value)
+                    {
+                        total += neighbors[j].getWeight();
+                    }
+                }
+            }
+            if (total == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return total;
+            }
+        }
+
+        public GraphNode GetNodeByValue(string Value)
+        {
+            foreach (GraphNode node in MyGraph)
+
+            {
+                if (node.Value == Value)
+                {
+                    return node;
+                }
+            }
+            return null;
+        }
+
 
 
 
