@@ -32,7 +32,7 @@ namespace ConsoleApp.Challenges.Graphs
                 weight = (int)(int?)null;
             }
             First.addEdge(Second, weight);
-            First.addEdge(Second,weight);
+           
 
         }
 

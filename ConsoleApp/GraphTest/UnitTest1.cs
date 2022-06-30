@@ -49,6 +49,20 @@ namespace GraphTest
             string[] arr = { "Pandora", "Arendelle", "Metroville" };
             Assert.NotEqual(250, myGraph.BusinessTrip(myGraph, arr));
         }
+        [Fact]
+        public void BussinesTrip4()
+        {
+
+            var NabooNode = myGraph.AddNode("Naboo");
+            var MonstropolisNode = myGraph.AddNode("Monstropolis");
+            
+
+            myGraph.AddEdge(MonstropolisNode, MonstropolisNode, 73);
+           
+
+            string[] arr = { "Monstropolis", "Naboo" };
+            Assert.Equal(73, myGraph.BusinessTrip(myGraph, arr));
+        }
 
 
 
