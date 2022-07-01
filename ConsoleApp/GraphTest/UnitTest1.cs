@@ -11,6 +11,47 @@ namespace GraphTest
     {
         Graph myGraph = new Graph(true);
 
+
+        // Code challenge 38 graph-depth-first
+        [Fact]
+        public void TestDepthFirst1()
+        {
+            var vertex = myGraph.AddNode("A");
+            var vertex1 = myGraph.AddNode("B");
+            var vertex2 = myGraph.AddNode("C");
+            var vertex3 = myGraph.AddNode("D");
+
+
+            myGraph.AddEdge(vertex, vertex3, 10);
+            myGraph.AddEdge(vertex, vertex1, 10);
+
+            myGraph.AddEdge(vertex1, vertex3, 10);
+            myGraph.AddEdge(vertex1, vertex2, 10);
+
+
+            List<GraphNode> list = myGraph.DepthFirst(vertex);
+            List<GraphNode> expected = new List<GraphNode> { vertex, vertex3, vertex1, vertex2 };
+            Assert.Contains(expected[2], list);
+        }
+        [Fact]
+        public void TestDepthFirst2()
+        {
+            var vertex = myGraph.AddNode("A");
+            List<GraphNode> result = myGraph.DepthFirst(vertex);
+            Assert.Equal("A", result[0].Value);
+        }
+        [Fact]
+        public void TestDepthFirst3()
+        {
+            var vertex = myGraph.AddNode("A");
+            myGraph.AddEdge(vertex, vertex, 1);
+            List<GraphNode> result = myGraph.DepthFirst(vertex);
+            Assert.Equal("A", result[0].Edges[0].getEnd().Value);
+        }
+
+
+
+
         // Code challenge 37 Business Trip
         [Fact]
         public void BussinesTrip1()

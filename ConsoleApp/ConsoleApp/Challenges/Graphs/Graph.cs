@@ -48,6 +48,18 @@ namespace ConsoleApp.Challenges.Graphs
 
             }
         }
+        public GraphNode GetNodeByValue(string Value)
+        {
+            foreach (GraphNode node in MyGraph)
+
+            {
+                if (node.Value == Value)
+                {
+                    return node;
+                }
+            }
+            return null;
+        }
         public List<Edge> getNeighbors(GraphNode node)
         {
             return MyGraph.Find(v => v.Value == node.Value).Edges;
@@ -113,19 +125,30 @@ namespace ConsoleApp.Challenges.Graphs
                 return total;
             }
         }
-
-        public GraphNode GetNodeByValue(string Value)
+        public List<GraphNode> DepthFirst(GraphNode root)
         {
-            foreach (GraphNode node in MyGraph)
-
+            List<GraphNode> visited = new List<GraphNode>();
+            Stack<GraphNode> stack = new Stack<GraphNode>();
+            stack.Push(root);
+            visited.Add(root);
+            while (stack.Count != 0)
             {
-                if (node.Value == Value)
+                GraphNode node = stack.Pop();
+
+                foreach (Edge edge in getNeighbors(node))
                 {
-                    return node;
+                    GraphNode neighbor = edge.getEnd();
+
+                    if (!visited.Contains(neighbor))
+                    {
+                        visited.Add(neighbor);
+                        stack.Push(neighbor);
+                    }
                 }
             }
-            return null;
+            return visited;
         }
+
 
 
 
