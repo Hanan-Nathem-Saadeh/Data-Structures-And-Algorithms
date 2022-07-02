@@ -34,3 +34,5 @@
 | 33      | hashmap-left-join | [hashmap-left-join](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Hashtable/hashmap-left-join.md)|
 | 35      | Graph Implementation | [Graph Implementation](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/ReadMe.md)|
 | 36      | BreathFirstTraversalGraph | [breath first traversal](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/breadthFirst.md)|
+| 37      | graph-business-trip | [graph-business-trip](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/BussininessTrip.md)|
+| 38      | graph-depth-first | [graph-depth-first](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/DepthFirst.md)|
