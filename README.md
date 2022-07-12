@@ -38,7 +38,7 @@
 | 38      | graph-depth-first | [graph-depth-first](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/DepthFirst.md)|
 | 39      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
 | 40      | Navigator class Mock interview | [Navigator class Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code41.png)|
-| 41      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
-| 42      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
-| 43      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
-| 44      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
+| 41      | sanitize a url Mock interview | [sanitize a url Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code42.png)|
+| 42      | sprinkler system  Mock interview | [sprinkler system  Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code43.png)|
+| 43      | largest possible result Mock interview | [largest possible result Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code44.png)|
+
