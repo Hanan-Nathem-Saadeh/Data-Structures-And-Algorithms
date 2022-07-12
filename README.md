@@ -36,3 +36,9 @@
 | 36      | BreathFirstTraversalGraph | [breath first traversal](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/breadthFirst.md)|
 | 37      | graph-business-trip | [graph-business-trip](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/BussininessTrip.md)|
 | 38      | graph-depth-first | [graph-depth-first](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/Challenges/Graphs/DepthFirst.md)|
+| 39      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
+| 40      | Navigator class Mock interview | [Navigator class Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code41.png)|
+| 41      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
+| 42      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
+| 43      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
+| 44      | adjacency matrix Mock interview | [adjacency matrix Mock interview](https://github.com/Hanan-Nathem-Saadeh/Data-Structures-And-Algorithms/blob/main/ConsoleApp/ConsoleApp/img/code39.png)|
